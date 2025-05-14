@@ -1,21 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Forum - Bharat RP</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bharat RP | Forum</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #facc15;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a2a2a;
+      padding: 0.5rem 0;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #facc15;
+    }
+    .forum {
+      padding: 2rem;
+    }
+    .category {
+      margin-bottom: 2rem;
+      background: #1e1e1e;
+      border-left: 4px solid #facc15;
+      padding: 1rem;
+    }
+    .category h2 {
+      color: #facc15;
+    }
+    .sub-forums {
+      margin-top: 1rem;
+      padding-left: 1rem;
+    }
+    .sub-forums li {
+      list-style: square;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
-<header><h1>Community Forum</h1></header>
-<main>
-<ul>
-<li>Admin Applications</li>
-<li>Leader Applications</li>
-<li>Roleplay Biographies</li>
-<li>Complaints about Players</li>
-<li>Complaints about Admins</li>
-</ul>
-<p>Visit our forum: <a href="#">FreeFlarum Link</a></p>
-</main>
-<footer><p>&copy; 2025 Bharat RP</p></footer>
+  <header>
+    <h1>Bharat RP Forums</h1>
+  </header>
+  <nav>
+    <a href="#rules">Rules</a>
+    <a href="#complaints">Complaints</a>
+    <a href="#applications">Applications</a>
+    <a href="#biographies">Biographies</a>
+  </nav>
+  <div class="forum">
+    <div class="category" id="rules">
+      <h2>📜 Server Rules</h2>
+      <p>Important rules to follow while playing on Bharat RP server.</p>
+    </div>
+
+    <div class="category" id="complaints">
+      <h2>⚠️ Complaints</h2>
+      <ul class="sub-forums">
+        <li>Complaint About Player</li>
+        <li>Complaint About Admin</li>
+      </ul>
+    </div>
+
+    <div class="category" id="applications">
+      <h2>📩 Applications</h2>
+      <ul class="sub-forums">
+        <li>Admin Application</li>
+        <li>Leader Application</li>
+      </ul>
+    </div>
+
+    <div class="category" id="biographies">
+      <h2>📘 Roleplay Biography</h2>
+      <p>Submit your RP character background story here.</p>
+    </div>
+  </div>
 </body>
 </html>
